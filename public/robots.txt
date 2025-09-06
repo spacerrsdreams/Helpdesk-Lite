@@ -1,0 +1,16 @@
+# Helpdesk Lite - Robots.txt
+
+# Allow all search engines to crawl the entire site
+User-agent: *
+Allow: /
+
+# Block crawling of common development/build files
+Disallow: /dist/
+Disallow: /src/
+Disallow: /node_modules/
+Disallow: /*.json
+Disallow: /*.config.*
+Disallow: /*.lock
+
+# Cache-Control directives for better crawling
+Crawl-delay: 1
